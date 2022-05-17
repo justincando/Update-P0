@@ -3,6 +3,7 @@ import { useState } from "react";
 import Registration from "./components/Registration";
 import Login from "./components/Login";
 import Navbar from "./hooks/Navbar";
+import Home from "./components/Home";
 import './App.css';
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
           />
         }
         />
+        <Route exact path = "/home" element ={<Home currentUser={currentUserId}/>}/>
       </Routes>
     </BrowserRouter>
   );
